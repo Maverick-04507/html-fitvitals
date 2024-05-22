@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitvitals - Augmenting Fitness</title>
+    <link rel="stylesheet" href="styles1.css"> <!-- You can link to a separate CSS file for styling -->
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="logo">
+                <img src="logoa.png" alt="Fitvitals Logo">
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#Activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                  <hr class="line">
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Fitvitals</h1>
+            <p>Augmenting Fitness</p>
+            <a href="#Activities" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Fitvitals is a fitness platform dedicated to helping you achieve your physical fitness goals and maintain menatl wellbeing. We provide personalized fitness plans, nutrition guidance, and a supportive community to keep you motivated.</p>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <img src="BMI.jpg" alt="Feature 1">
+            <!DOCTYPE html>
+<html>+=
+<head>
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #calculator {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <p>Calculate your Body Mass Index.</p>
+    <div id="calculator">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" step="0.01" required><br>
+        
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" step="0.01" required><br>
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value) / 100; // Convert height to meters
+            const bmi = weight / (height * height);
+
+            const resultElement = document.getElementById("result");
+
+            if (isNaN(bmi)) {
+                resultElement.innerHTML = "Please enter valid values for weight and height.";
+            } else {
+                resultElement.innerHTML = `Your BMI is: ${bmi.toFixed(2)}`;
+            }
+        }
+    </script>
+</body>
+</html>
+        </div>
+        <div class="feature">
+            <img src="Personalized workouts.jpg" alt="Feature 2">
+            <h3>Personalized Workouts</h3>
+            <p>Get customized workout plans tailored to your fitness level and goals.</p>
+        </div>
+        <div class="feature">
+            <img src="nutritonal guidance.jpg" alt="Feature 3">
+            <h3>Nutrition Guidance</h3>
+            <p>Access to expert nutritionists and meal plans to complement your workouts.</p>
+        </div>
+        <div class="feature">
+            <img src="mental well being.jpeg" alt="Feature 4">
+            <h3>Mental Wellbeing</h3>
+            <p>Join us for mental wellbeing motivation and support.</p>
+        </div>
+        <div class="feature">
+            <img src="Conc.png" alt="Feature 5">
+            <h3>Concentration Games</h3>
+            <p>Play fun and interacting Games for improving Concentration</p>
+        </div>
+
+    </section>
+
+    <section id="Activities" class="Fitness-section">
+        <hr>
+        <h2>Activities</h2>
+        <div class="fitness card">
+            <h3>Physical Fitness</h3>
+            <p>Focus on being physically fit </p>
+            <p class="Duration">One hour/Day</p>
+            <a href="physical.html" class="cta-button">Proceed</a>
+        </div>
+        <div class="fitness card">
+            <h3>Mental Wellbeing</h3>
+            <p>Aims at mental wellness</p>
+            <p class="Duration">30 minutes/Day</p>
+            <a href="mental.html"class="cta-button">Proceed</a>
+        </div>
+        <hr>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Contact us below.</p>
+        <form action="Contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fitvitals</p>
+    </footer>
+</body>
+</html>

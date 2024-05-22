@@ -1,0 +1,320 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    background-color: #f8f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-image: url('Backgroundf.jpg');
+    background-size: cover; /* Adjust the background image size as needed */
+    background-position: center; /* Center the background image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    color: #fff;
+    padding: 200px;
+    color: #fff;
+    padding: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items in the center */
+}
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center-align the content */
+}
+
+/* Style the logo image */
+.logo img {
+    display: block; /* Remove any default spacing around the image */
+    max-height: 400%; /* Adjust the height as needed */
+    max-width: 50%; /* Ensure the logo doesn't exceed the container width */
+    margin: 0 auto; /* Horizontally center the logo within its container */
+    position:relative;
+    top: 0;
+    width: 600%;
+}
+.logo h1 {
+    color: #000;
+    margin-left: 10px;
+    text-align: center; /* Horizontally center-align the text */
+    flex: 1; /* Expand to fill available space */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position:absolute;
+    top: 0;
+    width: 80%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav ul li {
+    margin-right: 20px;
+    align-items: top right;
+    
+}
+
+header nav ul li a {
+    color: #10337e;
+    text-decoration: none;
+   
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 128px;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.hero p {
+    font-size: 30px;
+    color:black;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e04115;
+}
+
+/* Style the about section */
+.about-section {
+    background-color: #80dcea;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style the features section */
+.features-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin: 30px;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Style the pricing section */
+.Fitness-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.Fitness-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.fitness-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.fitness-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fitness-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.Duration {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Style the contact section */
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    background-color: #ff5722;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e04115;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .feature {
+        margin: 20px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    .fitness-card {
+        padding: 25px;
+        margin: 15px;
+    }
+
+    .fitness-card h3 {
+        font-size: 18px;
+    }
+
+    .fitness-card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .duration {
+        font-size: 20px;
+    }
+
+    .contact-section input,
+    .contact-section textarea,
+    .contact-section button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

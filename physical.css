@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+/* Set a background color and font for the entire page */
+body {
+
+    background-color: #a44a4a;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header/navigation bar */
+header {
+    background-image: url(fitness.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #d8f6d3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #060606;
+    font-weight: bold;
+}
+
+/* Style sections */
+section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Style the workout cards */
+.workout-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
